@@ -20,7 +20,7 @@ int main()
   cout << s4 << endl; 
 }
 
-
+=========================================
 
 
 #include <iostream>
@@ -49,3 +49,23 @@ void ShowIndex()
 	int iIndex=20;
 	cout << "Index is :" << iIndex << endl;
 }
+
+
+===========================================================================
+
+
+#include <iostream>
+using namespace std;
+void OutputInfo(const char* pchData = "One world,one dream!")
+{
+	cout << pchData << endl;	//輸出資訊
+}
+int main()
+{
+	OutputInfo();							//利用預設值作為函數實際參數
+	OutputInfo("Beijing 2008 Olympic Games!");	//直接傳遞實際參數
+}
+
+
+
+
