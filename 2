@@ -1,0 +1,51 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  string s1("Welcome");
+  s1.append(" to CPP"); 
+  cout << s1 << endl; 
+  
+  string s2("Welcome");
+  s2.append(" to C and Cpp", 0, 8); 
+  cout << s2 << endl;
+  
+  string s3("Welcome");
+  s3.append(" to C and Cpp", 3); 
+  cout << s3 << endl;
+   
+  string s4("Welcome"); 
+  s4.append(20, 'F'); 
+  cout << s4 << endl; 
+}
+
+
+
+
+#include <iostream>
+using namespace std;
+void ShowMessage(); //函式宣告語句
+void ShowAge(); //函式宣告語句
+void ShowIndex(); //函式宣告語句
+int main()
+{
+	ShowMessage(); //函式呼叫語句
+	ShowAge(); //函式呼叫語句
+	ShowIndex(); //函式呼叫語句
+    return 0;
+}
+void ShowMessage()
+{
+	cout << "Welcome" << endl;
+}
+void ShowAge()
+{
+	int iAge=17;
+	cout << "age is :" << iAge << endl;
+}
+void ShowIndex()
+{
+	int iIndex=20;
+	cout << "Index is :" << iIndex << endl;
+}
